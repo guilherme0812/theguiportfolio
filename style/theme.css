@@ -1,10 +1,12 @@
 :root {
     --text-color: #7A7979;
+    --text-light-color: #fff;
     --title-color: #7F31E5;
     --background-light-color: #F8F9Fa;
-    --background-purple-inicial-color: #BB76E2
-    --background-purple-final-color: #A775E4
+    --background-purple-inicial-color: #BB76E2;
+    --background-purple-final-color: #A775E4;
     --background-square: #ECEFEF;
     --background-color-circles: #936AC5;
 
+    
 }

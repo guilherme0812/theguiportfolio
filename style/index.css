@@ -1,3 +1,68 @@
-.image-for-my-web-site {
-    width: 100%;
+/* Esquema de cores */
+@import "./theme.css";
+
+.header-main {
+    background-color: var(--background-purple-inicial-color);
+    color: var(--text-light-color);
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    height: 50%;
+    top: 25%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    padding-left: 35px;
+    transition: 1s;
+}
+nav .dot {
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    margin: 20px 0;
+    transition: ease-in-out 1s;
+}
+nav .dot:hover {
+    width: 100px;
+    
+}
+
+.header-main .container {padding: 0 5%}
+
+.header-main-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.text-header-main-container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.text-header-main-container > div{text-align: center; width: 100%;margin: 0;}
+
+.welcome h1 {font-size: 2.6em; margin-bottom: 15px;}
+
+.development-today-container > div{
+    max-width: 1000px;
+    padding: 10px 0;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255,.15);
+    max-width: 600px;
+    margin: auto auto 20% auto
+}
+
+.arrow-down {color: #fff; width: 70px; height: 35px; padding-top: 0px;}
+
+.ondas-header {position: absolute; bottom: 0; left: 0; width: 100%;}
+
+@media only screen and (max-width: 900px) {
+    
 }
