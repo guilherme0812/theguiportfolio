@@ -16,27 +16,57 @@
 /* Esquema de cores */
 @import "./theme.css";
 
+/* Métricas */
+@import "./metrics.css";
+
 body {
     margin: 0; padding: 0;
     font-family: 'Poppins';
+    background-color: var(--background-light-color);
 }
 
 h1, h2, h3, h4 {margin: 0; font-weight: 600;}
+.purple-background-color {
+    background-color: var(--background-purple-inicial-color);
+}
 
 .container {
     max-width: 1120px;
     margin: auto;
-    padding: 5% 5%;
+    padding: 7% 5%;
 }
-
-.d-flex {display: flex;}
 
 .title {
-
+    font-size: var(--font-size-title);
+    line-height: 0.9em;
+    margin-bottom: 50px;
 }
-
-.subtitle {
-
+.sub-title {
+    font-size: 1.6em;
 }
+.p {
+    color: var(--text-color);
+    font-size: var(--font-size-paragraph);
+}
+.purple-title {
+    color:var(--purple-title-color)
+}
+.light-text {color: var(--text-light-color)}
 
-.text {font-size: 1.1em;}
+
+.divide-em-dois-pai{
+    display: flex;
+    flex-direction: row;
+}
+.divide-em-dois-filho {width: 50%;}
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 15% 3%;
+    }
+
+    .divide-em-dois-pai{
+        display: flex;
+        flex-direction: column;
+    }
+    .divide-em-dois-filho {width: 100%;}
+}
