@@ -96,9 +96,45 @@ section.ideas-section .squares:nth-child(3) {}
 }
 
 /* SOP */
+.sop {background-image: url(../assets/images/images/background-sop.jpg);}
+
+.sop .dog-image-container img{ max-width: 65%; display: block; margin: auto;}
+
+.sop > .divide-em-dois-pai{min-height: 60vh; align-items: center;}
 .card {
+    -webkit-box-shadow: 0px 0px 26px -4px rgba(0,0,0,0.81); 
+    box-shadow: 0px 0px 26px 8px rgba(153,153,153,0.75);
     padding: 40px 40px;
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .1));
-    max-width: 350px;
+    background: linear-gradient(155deg, rgba(255, 255, 255, .7) 10%,rgba(255, 255, 255, .1) , rgba(255, 255, 255, .1));
+    max-width: 300px;
+    margin: auto;
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255,.1);
+    backdrop-filter: blur(4px);
+}
+.card  p{color: var(--text-light-color);}
+.button-container-sop {
+    display: flex;
+    justify-content: center;
+}
+.sop a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.button-sop {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: .3rem 1rem;
+    margin-top: 2rem;
+}
+.sop a:hover .button-sop{
+    transition: 0.5s;
+    background-color: #fff;
+    box-shadow: 0px 0px 26px 2px var(--text-light-color);
+}
+.sop a:hover{
+    text-decoration: none;
+    color: var(--text-color);
+    
 }
