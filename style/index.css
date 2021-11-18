@@ -96,8 +96,11 @@ section.ideas-section .squares:nth-child(3) {}
 }
 
 /* SOP */
-.sop {background-image: url(../assets/images/images/background-sop.jpg);}
-
+.sop {
+    background-image: url(../assets/images/images/background-sop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .sop .dog-image-container img{ max-width: 65%; display: block; margin: auto;}
 
 .sop > .divide-em-dois-pai{min-height: 60vh; align-items: center;}
@@ -137,4 +140,73 @@ section.ideas-section .squares:nth-child(3) {}
     text-decoration: none;
     color: var(--text-color);
     
+}
+
+@media only screen and (max-width: 900px) {
+    .sop .dog-image-container img{ max-width: 50%; display: block; margin: auto;}
+}
+/*quote*/
+.quote-section {
+    min-height: 100vh;
+    background-image: url(../assets/images/images/ondas-quote.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.quote-section > .container > .divide-em-dois-pai{
+    min-height: 80vh;
+    align-items: center;
+}
+.img-container-quote img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+/*Projects*/
+.projects-section header {
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.projects-section header::before {
+    content: '';
+    position: absolute;
+    bottom: 120%;
+    left: 35%;
+    width: 30%;
+    height: 3px;
+    background-color: var(--purple-title-color);
+    transition: .5s;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5rem 0 3rem 0;
+}
+.projects-container .project-card {
+    background-color: #fff;
+    margin: 0 1.4rem;
+    box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.73);
+}
+.projects-container .project-card .header-card {padding: 0.9rem 0;}
+.projects-container .project-card img {width: 100%;}
+.projects-container .project-card .footer-card {text-align: center;}
+
+@media only screen and (max-width: 900px) {
+    .projects-container {
+        flex-wrap: wrap;
+    }
+    .projects-container .project-card {
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+/*footer*/
+footer {background-color: var(--background-purple-inicial-color);}
+footer p {
+    font-size: var(--font-size-paragraph);
+    color: var(--text-light-color);
+    text-align: center;
 }

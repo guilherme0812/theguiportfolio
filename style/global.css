@@ -38,7 +38,7 @@ h1, h2, h3, h4 {margin: 0; font-weight: 600;}
 
 .title {
     font-size: var(--font-size-title);
-    line-height: 0.9em;
+    line-height: 1.2em;
     margin-bottom: 50px;
 }
 .sub-title {
@@ -59,14 +59,23 @@ h1, h2, h3, h4 {margin: 0; font-weight: 600;}
     flex-direction: row;
 }
 .divide-em-dois-filho {width: 50%;}
+
+/*Quote*/
+.p-quote {
+    color: var(--text-color);
+    font-size: var(--font-size-quote-paragraph);
+    line-height: 150%;
+}
+.quote-mark {font-size: var(--font-size-quote-marks)}
+
 @media only screen and (max-width: 900px) {
     .container {
-        padding: 15% 3%;
+        padding: 15rem 3rem;
     }
 
     .divide-em-dois-pai{
         display: flex;
         flex-direction: column;
     }
-    .divide-em-dois-filho {width: 100%;}
+    .divide-em-dois-filho {width: 100%; margin-bottom: 5rem;}
 }
