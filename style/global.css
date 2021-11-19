@@ -70,7 +70,7 @@ h1, h2, h3, h4 {margin: 0; font-weight: 600;}
 
 @media only screen and (max-width: 900px) {
     .container {
-        padding: 15rem 3rem;
+        padding: 30% 7% 5% 7%;
     }
 
     .divide-em-dois-pai{
@@ -78,4 +78,7 @@ h1, h2, h3, h4 {margin: 0; font-weight: 600;}
         flex-direction: column;
     }
     .divide-em-dois-filho {width: 100%; margin-bottom: 5rem;}
+
+    .title {font-size: 2em;}
+    .p-quote {font-size: 1.1rem;}
 }
