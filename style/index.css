@@ -1,14 +1,14 @@
 /* Esquema de cores */
 @import "./theme.css";
 
+/*HEADER*/
 .header-main {
-    background: url(../assets/images/images/grafos.png), no-repeat,linear-gradient(45deg, var(--background-purple-inicial-color), var(--background-purple-final-color));
+    background: linear-gradient(45deg, var(--background-purple-inicial-color), var(--background-purple-final-color));
     background-size: contain;
     background-position: left bottom;
     color: var(--text-light-color);
     position: relative;
 }
-
 
 .header-main .container {padding: 0 5%}
 
@@ -25,8 +25,22 @@
     align-items: center;
 }
 .text-header-main-container > div{text-align: center; width: 100%;margin: 0;}
-
-.welcome h1 {font-size: 2.6em; margin-bottom: 15px;}
+.welcome {max-width: 900px}
+.welcome h1#welcomeText {font-size: 2.6em; margin-bottom: 15px; font-family: consolas; font-weight: 400; letter-spacing: 0px;}
+h1#welcomeText::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
 
 .development-today-container > div{
     max-width: 1000px;
@@ -43,6 +57,11 @@
 .arrow-down {color: #fff; width: 70px; height: 35px; padding-top: 0px;}
 
 .ondas-header {position: absolute; bottom: 0; left: 0; width: 100%;}
+
+@media only screen and (max-width: 600px) {
+    .welcome {max-width: 500px;}
+    .welcome h1 {font-size: 2rem;}
+}
 
 /*Ideas section*/
 section.ideas-section > .container{
